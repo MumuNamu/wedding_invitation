@@ -69,6 +69,18 @@
     </script>
 </head>
 <body class="text-center">
+<audio id="bgm" loop>
+  <source src="bgm.mp3" type="audio/mpeg">
+</audio>
+  <button id="playBtn" onclick="document.getElementById('bgm').play()">🔊 배경음악 재생</button>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // 자동으로 버튼 클릭 실행 시도
+      document.getElementById('playBtn').click();
+    });
+  </script>
+
 <div class="top-div">
     <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <h1 class="wow fadeIn cover-heading" style="text-align: right; margin-top: 0.5em; margin-right: 0.5em; font-size: 2rem;">
@@ -84,7 +96,7 @@
         <div class="wow fadeInUp">
             <p class="top-title">김명운 · 이재은</p>
             <p class="top-title-sub">토요일 오전 11시</p>
-            <p class="top-title-sub">더채플앳웨스트 7층 단독홀</p>
+            <p class="top-title-sub">더채플앳웨스트 7층 단독홀dddddddd</p>
             <br/><br/><br/>
             <hr class="cover-container"/>
             <br/>
