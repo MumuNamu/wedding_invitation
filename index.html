@@ -343,7 +343,17 @@
                                         <span id="account2">신한 110-114-815335 최정아</span>
                                         <img src="img/msg.jpg" alt="복사" style="width:20px; height:20px; cursor:pointer; margin-left:5px;" onclick="copyToClipboard('account2')">
                                         </div>
-                                </div>
+                                    </div>
+                            <script>
+                                function copyToClipboard(elementId) {
+                                const text = document.getElementById(elementId).innerText;
+                                navigator.clipboard.writeText(text).then(() => {
+                                    alert("계좌번호가 복사되었습니다.");
+                                    }).catch(err => {
+                                    alert("복사에 실패했습니다: " + err);
+                                    });
+                                }
+                            </script>
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
